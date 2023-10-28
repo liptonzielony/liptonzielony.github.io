@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona urodzinowa dla natalki!</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+    <style>
+        body {
+            background-color: #ffe0e6; /* Różowe tło */
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff1493; /* Różowy nagłówek */
+            font-size: 36px; /* Zwiększenie rozmiaru tekstu */
+            margin-bottom: 20px; /* Odstęp od tekstu poniżej */
+        }
+
+        p {
+            font-size: 24px; /* Zwiększenie rozmiaru tekstu */
+        }
+        canvas {
+            position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+            }
+        .preload {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            background-color: #ffe0e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .preload img {
+            width: 27%;
+            height: 14%;
+        }
+
+        .loading-text {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .loading-dots {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 175px;
+        }
+
+        .loading-dot {
+            width: 10px;
+            height: 10px;
+            background-color: #f3b4c2;
+            border-radius: 50%;
+            margin: 0 5px;
+            animation: bounce 1s infinite;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="preload">
+        <img src="https://i.giphy.com/media/7NpSWoebkmJuryOWOG/giphy.webp">
+        <div class="loading-dots">
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas> 
+    <div id="fullpage">
+        <div class="section">
+            <div class="content">
+                <h1>Hejka, Natalko! 💐 </h1> 
+                <p>Wszystkiego najlepszego z okazji urodzin!🥰</p>
+            </div>
+        </div>
+ 
+        <div class="section">
+            <div class="content">
+                <h1>Dlaczego powstała ta strona? 🥳</h1>
+                <p>Nie wiedziałem w jaki sposób przekazać ci ładnie moje życzenia urodzinowe więc stąd ten pomysł aby zrobić tą stronę 😋 i no jestem informatykiem więc 🤓 </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content">
+                <h1>Natalko, z okazji dnia twoich urodzin pragnę Ci złożyć moje życzenia. 💫</h1>
+                <p>Chciałbym życzyć Ci przede wszystkim, abyś realizowała cele, które sobie postawisz w życiu, i nie tylko zbliżała się do nich, ale faktycznie je osiągała. Nie zawsze ta droga jest prosta i przyjemna, ale na pewno będzie warto, choćby ze względu na zdobycie informacji, doświadczeń i umiejętności potrzebnych do osiągnięcia tych celów. 📊</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content">
+                <h1>Kolejną bardzo ważną i słuszną sprawą, którą muszę Ci życzyć, jest zdrowie. 🩺🩹</h1>
+                <p> Mógłbym tutaj zacytować fragment fraszki Jana Kochanowskiego, ale życzę Ci po prostu, Natalko żebyś miała te zdrowie i żebyś zawsze stawiała je na pierwszym miejscu. Jest ważne zarówno dla Ciebie, jak i dla Twoich bliskich.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content">
+                <h1>Życzę Ci również, abyś szybko i sprawnie ogarnęła wszystkie sprawy,⏳</h1>
+                <p>które masz w życiu, naprzykład takie jak zdobycie prawa jazdy 🚘. Życzę Ci abyś była opanowana, mimo że to może być stresujące i napewno ciężkie do wykanania. Chce przez to powiedzieć że w życiu pojawia się wiele takich stresujących sytuacji, ale szczerze wierzę i ufam, że sobie w nich poradzisz i nie tylko przy egzaminie na prawo jazdy ale też w innch różnych sytauacjach w twoim życiu. Obiecuję, że będę trzymał mocno kciuki wiem, że to dla Ciebie ważne.😊</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h1>Mam również nadzieję,🎂</h1>
+                <p>że ten dzień urodzin przyniesie Ci wiele radości oraz niezliczone chwile szczęścia. Chciałbym, abyś zawsze miała swój słodki uśmiech na ustach, abyś zawsze była radosna i uśmiechnięta, tak jak teraz, gdy czytasz tę wiadomość 🥰.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h1>Chciałbym bardzo,✨</h1>
+                <p>bardzo, bardzo złożyć Ci te życzenia osobiście, a na pewno to zrobię przy najbliższej okazji.😌</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h1>Ponadto, Natalio, chciałbym szczerze Ci 💌 </h1>
+                <p>podziękować za to, że jesteś, że piszesz, że mnie wspierasz, pomagasz, doradzasz i wysłuchujesz moich przemyśleń oraz marudzenia w niektórych sprawach🤣🤣. Bardzo Ci dziękuję, po prostu ufam Tobie i wiem, że zawsze mogę się do Ciebie zwrócić z jakąkolwiek sprawą, to wiele dla mnie znaczy!🥰</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h1>Na zakończenie mam nadzieję,🌺</h1>
+                <p>że nawet w trudniejszych chwilach zawsze znajdziesz wsparcie i siłę, by przejść przez nie z godnością i determinacją.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h1>Może trochę się powtarzam, 😖</h1>
+                <p> ale nie wiem, jak inaczej to wszystko ubrać w słowa. 🤯</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h1>Z całego serca życzę🎉</h1>
+                <p>Ci udanych i wspaniałych urodzin, Natalko!! 🥰🥰🥰🥰</p>
+            </div>
+        </div>
+        <!-- Dodaj tyle sekcji, ile potrzebujesz -->
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+
+    <script>
+        new fullpage('#fullpage', {
+            // Konfiguracja opcji
+            autoScrolling: true, // Włącza płynne przewijanie
+            navigation: true, // Pokazuje nawigację (kuleczki) między sekcjami
+        });
+        let W = window.innerWidth;
+        let H = window.innerHeight;
+        const canvas = document.getElementById("canvas");
+        const context = canvas.getContext("2d");
+        const maxConfettis = 25;
+        const particles = [];
+
+        const possibleColors = [
+        "DodgerBlue",
+        "OliveDrab",
+        "Gold",
+        "Pink",
+        "SlateBlue",
+        "LightBlue",
+        "Gold",
+        "Violet",
+        "PaleGreen",
+        "SteelBlue",
+        "SandyBrown",
+        "Chocolate",
+        "Crimson"
+        ];
+
+        function randomFromTo(from, to) {
+        return Math.floor(Math.random() * (to - from + 1) + from);
+        }
+
+        function confettiParticle() {
+        this.x = Math.random() * W; // x
+        this.y = Math.random() * H - H; // y
+        this.r = randomFromTo(11, 33); // radius
+        this.d = Math.random() * maxConfettis + 11;
+        this.color =
+            possibleColors[Math.floor(Math.random() * possibleColors.length)];
+        this.tilt = Math.floor(Math.random() * 33) - 11;
+        this.tiltAngleIncremental = Math.random() * 0.07 + 0.05;
+        this.tiltAngle = 0;
+
+        this.draw = function() {
+            context.beginPath();
+            context.lineWidth = this.r / 2;
+            context.strokeStyle = this.color;
+            context.moveTo(this.x + this.tilt + this.r / 3, this.y);
+            context.lineTo(this.x + this.tilt, this.y + this.tilt + this.r / 5);
+            return context.stroke();
+        };
+        }
+
+        function Draw() {
+        const results = [];
+
+        // Magical recursive functional love
+        requestAnimationFrame(Draw);
+
+        context.clearRect(0, 0, W, window.innerHeight);
+
+        for (var i = 0; i < maxConfettis; i++) {
+            results.push(particles[i].draw());
+        }
+
+        let particle = {};
+        let remainingFlakes = 0;
+        for (var i = 0; i < maxConfettis; i++) {
+            particle = particles[i];
+
+            particle.tiltAngle += particle.tiltAngleIncremental;
+            particle.y += (Math.cos(particle.d) + 3 + particle.r / 2) / 4;
+            particle.tilt = Math.sin(particle.tiltAngle - i / 3) * 15;
+
+            if (particle.y <= H) remainingFlakes++;
+
+            // If a confetti has fluttered out of view,
+            // bring it back to above the viewport and let if re-fall.
+            if (particle.x > W + 30 || particle.x < -30 || particle.y > H) {
+            particle.x = Math.random() * W;
+            particle.y = -30;
+            particle.tilt = Math.floor(Math.random() * 10) - 20;
+            }
+        }
+
+        return results;
+        }
+
+        window.addEventListener(
+        "resize",
+        function() {
+            W = window.innerWidth;
+            H = window.innerHeight;
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        },
+        false
+        );
+
+        // Push new confetti objects to `particles[]`
+        for (var i = 0; i < maxConfettis; i++) {
+        particles.push(new confettiParticle());
+        }
+
+        // Initialize
+        canvas.width = W;
+        canvas.height = H;
+        Draw();
+        setTimeout(function() {
+            var preload = document.querySelector(".preload");
+            preload.style.opacity = "0";
+            preload.style.pointerEvents = "none";
+            var content = document.querySelector(".content");
+            content.style.display = "block";
+        }, 5000);
+
+    </script>
+</body>
+</html>
